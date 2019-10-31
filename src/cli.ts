@@ -12,7 +12,7 @@ import chalk from 'chalk';
 import { Loader } from './Loader';
 import { createConnection, fixturesIterator } from './util';
 import { Resolver } from './Resolver';
-import { getConnection, getRepository } from 'typeorm';
+import { getConnection, getRepository } from 'typeorm-plus';
 import { Builder } from './Builder';
 import { Parser } from './Parser';
 

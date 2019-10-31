@@ -1,13 +1,12 @@
 {
-  "name": "typeorm-fixtures-cli",
-  "version": "1.3.7",
+  "name": "typeorm-plus-fixtures-cli",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "bin": {
     "fixtures": "dist/cli.js"
   },
   "scripts": {
-    "postinstall": "opencollective-postinstall",
     "build": "npm run clean && tsc -p tsconfig.json",
     "clean": "trash dist",
     "lint:fix": "prettier src/**/*.ts --write && tslint --fix --project .",
@@ -15,27 +14,28 @@
     "test": "nyc mocha",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "postbuild": "cp package.json dist/package.json"
   },
   "keywords": [
     "typeorm",
+    "typeorm-plus",
     "fixtures",
     "orm",
     "cli",
     "typescript",
     "faker",
     "fixture-loader",
-    "typeorm-fixtures"
+    "typeorm-plus-fixtures"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RobinCK/typeorm-fixtures.git"
+    "url": "https://github.com/morishjs/typeorm-plus-fixtures.git"
   },
-  "author": "Igor Ognichenko <ognichenko.igor@gmail.com>",
+  "author": "Junsuk Park <park64kr63@gmail.com>",
   "bugs": {
-    "url": "https://github.com/RobinCK/typeorm-fixtures/issues"
+    "url": "https://github.com/morishjs/typeorm-plus-fixtures/issues"
   },
-  "homepage": "https://github.com/RobinCK/typeorm-fixtures#readme",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
@@ -69,7 +69,6 @@
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-immutable": "^6.0.1",
-    "typeorm": "^0.2.18",
     "typescript": "^3.5.3",
     "yaml-lint": "^1.2.4"
   },
@@ -89,12 +88,10 @@
     "opencollective-postinstall": "^2.0.2",
     "reflect-metadata": "^0.1.13",
     "resolve-from": "^5.0.0",
+    "typeorm-plus": "^0.0.54",
     "yargs-parser": "^15.0.0"
   },
   "peerDependencies": {
-    "typeorm": "^0.2.11"
-  },
-  "collective": {
-    "url": "https://opencollective.com/typeorm-fixtures"
+    "typeorm-plus": "^0.0.54"
   }
 }

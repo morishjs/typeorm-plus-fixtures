@@ -4,7 +4,7 @@ import * as chaiAsPromised from 'chai-as-promised';
 import * as chai from 'chai';
 import { Builder, Parser } from '../../src';
 import { Connection as MockConnection } from './assets/mock/Connection';
-import { Connection } from 'typeorm';
+import { Connection } from 'typeorm-plus';
 import { User } from './assets/entity/User';
 import { Listing } from './assets/entity/Listing';
 

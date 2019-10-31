@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { isObject, isArray } from 'lodash';
-import { Connection } from 'typeorm';
+import { Connection } from 'typeorm-plus';
 import { IDataParser, IFixture } from './interface';
 import { plainToClassFromExist } from 'class-transformer';
 
