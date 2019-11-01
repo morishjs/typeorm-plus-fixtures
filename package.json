@@ -1,10 +1,10 @@
 {
   "name": "typeorm-plus-fixtures-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "bin": {
-    "fixtures": "dist/cli.js"
+    "fixtures": "cli.js"
   },
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json",
@@ -15,7 +15,7 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "commit": "npx git-cz",
-    "postbuild": "cp package.json dist/package.json"
+    "postbuild": "cp {package.json,README.md,LICENSE} dist/"
   },
   "keywords": [
     "typeorm",
