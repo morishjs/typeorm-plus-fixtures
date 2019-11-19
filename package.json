@@ -1,6 +1,6 @@
 {
   "name": "typeorm-plus-fixtures-cli",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -88,10 +88,10 @@
     "opencollective-postinstall": "^2.0.2",
     "reflect-metadata": "^0.1.13",
     "resolve-from": "^5.0.0",
-    "typeorm-plus": "^0.0.54",
+    "typeorm-plus": "^0.0.57",
     "yargs-parser": "^15.0.0"
   },
   "peerDependencies": {
-    "typeorm-plus": "^0.0.54"
+    "typeorm-plus": "^0.0.55"
   }
 }
